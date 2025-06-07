@@ -1,0 +1,168 @@
+{
+  "clientes": [
+    {
+      "cpf": "987.654.321-00",
+      "nome": "Paul Newman",
+      "telefone": "998034536",
+      "cidade": "New York City",
+      "uf": "AL",
+      "cep": "01153 000",
+      "id": "b27139de-b2e1-4033-a12e-0437a2290011"
+    },
+    {
+      "cpf": "876.543.345-99",
+      "nome": "Jon Voight",
+      "telefone": "997654677",
+      "cidade": "Londrina",
+      "uf": "PA",
+      "cep": "09932 000",
+      "id": "f30ab3fd-3f55-4614-b581-61df3c58c74d"
+    },
+    {
+      "cpf": "123.456.789-00",
+      "nome": "Isaac Newton",
+      "telefone": "998654567",
+      "cidade": "Londres",
+      "uf": "SP",
+      "cep": "78894 345",
+      "id": "d45f2fc8-9613-4b52-83b0-ccd44cfb9fb9"
+    },
+    {
+      "cpf": "654.345.894-20",
+      "nome": "Leonard Nimoy",
+      "telefone": "554433558",
+      "cidade": "Ponta Grossa",
+      "uf": "PA",
+      "cep": "654567 786",
+      "id": "6736bd55-4566-469e-b87f-eb50410fcf60"
+    },
+    {
+      "nome": "Felipe Akio Nishimura",
+      "cpf": "24034972823",
+      "telefone": "998031171",
+      "cidade": "Presidente Prudente",
+      "uf": "SP",
+      "cep": "19553-242",
+      "id": "6546ceea-f80f-4080-a930-ce9cee4f4614"
+    },
+    {
+      "nome": "Gabriel Rozendo Pontes",
+      "cpf": "510.655.358-29",
+      "telefone": "981566996",
+      "cidade": "Presidente Prudente",
+      "uf": "SP",
+      "cep": "19063-841",
+      "id": "804d92a6-50d7-42b3-96a8-9fa260b1220e"
+    },
+    {
+      "nome": "Iam Castilho Silvestre",
+      "cpf": "102418829",
+      "telefone": "998034543",
+      "cidade": "Presidente Prudente",
+      "uf": "SP",
+      "cep": "19230-050",
+      "id": "c4bf004f-4913-4440-9e50-d90aae6e1257"
+    }
+  ],
+  "fornecedores": [
+    {
+      "nomeFornecedor": "Vanderlay Industries",
+      "cnpj": "60.578.999/9991-00",
+      "endereco": "Marilia",
+      "telefone": "776655443",
+      "email": "vanderlay@ninja.party",
+      "id": "64f4b97f-3011-4383-a96b-023f001b4768"
+    },
+    {
+      "nomeFornecedor": "Zastava",
+      "cnpj": "65.456.345/4565-98",
+      "endereco": "Bratislava",
+      "telefone": "998877334",
+      "email": "zastava@email.org",
+      "id": "176aff20-a41b-4a00-876f-8d416b8e2632"
+    },
+    {
+      "nomeFornecedor": "Hosaka",
+      "cnpj": "67.564.564/3456-43",
+      "endereco": "Pernambuco",
+      "telefone": "543456765",
+      "email": "hosaka@emai.jp",
+      "id": "0449f977-0831-42eb-92e6-cd15a1d292bd"
+    }
+  ],
+  "produtos": [
+    {
+      "codigo": 10,
+      "nome": "galiLEUu",
+      "valor": 300,
+      "resultado": 264,
+      "id": "ef91da5c-079c-4636-8121-90f56e03efda"
+    },
+    {
+      "codigo": 1,
+      "nome": "Computador",
+      "valor": 5600,
+      "resultado": 4928,
+      "id": "d25fd2a5-e0c7-4cf4-8e03-089ee31b4cfa"
+    },
+    {
+      "codigo": 1200000,
+      "nome": "Carro",
+      "valor": 1200000,
+      "resultado": 1056000,
+      "id": "f7c8de8c-8fe3-4ac6-9705-51aa9e4b138e"
+    },
+    {
+      "codigo": 2,
+      "nome": "Trator",
+      "valor": 12345,
+      "resultado": 10863.6,
+      "id": "c0e7d1b8-647b-4942-ab2d-2a172da408dc"
+    }
+  ],
+  "entregadores": [
+    {
+      "nome": "Miguel Broca",
+      "cpf": "654.453.453-90",
+      "telefone": "549393239",
+      "email": "gabriel@gmail.com",
+      "meioTransporte": "moto",
+      "placaVeiculo": "MIG-8989",
+      "id": "bf5b21ae-5269-4e7a-b407-c63030036c1d"
+    }
+  ],
+  "categorias": [
+    {
+      "id": "a1b2c3d4",
+      "nome": "Limpeza",
+      "descricao": "Produtos usados para limpeza doméstica",
+      "status": "ativa"
+    },
+    {
+      "nome": "Eletrodomésticos",
+      "descricao": "Eletrônicos para casa",
+      "status": "inativa",
+      "id": "0f671b22-2f2a-442e-aeed-93030b5f9ce5"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "2df24t2edf",
+      "usuario": "admin",
+      "email": "admin@outlook.com",
+      "senha": "admin"
+    },
+    {
+      "usuario": "gabriel",
+      "email": "bielpontes290@gmail.com",
+      "senha": "123",
+      "id": "c0f140cd-7d7b-42b2-ac7a-8cc098878bdd"
+    },
+    {
+      "usuario": "felipe",
+      "email": "felipe.akio.nishimura@gmail.com",
+      "senha": "123",
+      "id": "6232230b-aef8-4cc4-b1c7-8287d7bd46b0"
+    }
+  ]
+}
