@@ -1,0 +1,48 @@
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: contain;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.card-body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 1rem;
+    height: 60px;
+    overflow: hidden;
+}
+
+.card-price {
+    font-size: 1.2rem;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.card-rating {
+    color: #ffc107;
+    font-size: 1.1rem;
+}
+
+.vitrine {
+    margin-bottom: 30px;
+}
+
+body {
+    padding-bottom: 20px;
+}

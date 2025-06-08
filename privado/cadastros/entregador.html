@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Entregadores</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+</head>
+
+<body>
+    <div class="container">
+        <div class="alert alert-secondary text-center mt-5">
+            <h1>Cadastro de Entregadores</h1>
+        </div>
+        <form id="formCadEntregador" action="#" method="POST" class="row g-3 needs-validation border m-1 p-2" novalidate>
+            <div class="col-md-4">
+                <label for="nomeEntregador" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" required>
+                <div class="invalid-feedback">
+                    Por favor, informe o nome do entregador!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="cpf" class="form-label">CPF</label>
+                <input type="text" class="form-control" id="cpf" required>
+                <div class="invalid-feedback">
+                    Por favor, informe o CPF!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input type="text" class="form-control" id="telefone" required>
+                <div class="invalid-feedback">
+                    Por favor, informe o telefone!
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">
+                    Por favor, informe um email válido!
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="meioTransporte" class="form-label">Meio de Transporte</label>
+                <select class="form-select" id="meioTransporte" required>
+                    <option selected disabled value="">Escolha...</option>
+                    <option value="bicicleta">Bicicleta</option>
+                    <option value="moto">Moto</option>
+                    <option value="carro">Carro</option>
+                </select>
+                <div class="invalid-feedback">
+                    Por favor, selecione o meio de transporte.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="placaVeiculo" class="form-label">Placa do Veículo</label>
+                <input type="text" class="form-control" id="placaVeiculo" required>
+                <div class="invalid-feedback">
+                    Por favor, informe a placa do veículo!
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <button class="btn btn-primary" type="submit">Cadastrar</button>
+                <a href="../menu.html" class="btn btn-secondary">Voltar</a>
+            </div>
+        </form>
+        <div id="tabelaEntregador">
+            
+        </div>
+    </div>
+
+</body>
+<script src='/js/bootstrap.bundle.min.js'></script>
+<script src="/js/scriptEntregador.js"></script>
+
+</html>
