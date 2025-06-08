@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Usuário</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../../css/cadastro-usuario.css" />
+</head>
+<body>
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="col-md-6 col-lg-5">
+      <div class="card shadow-lg p-4 bg-light rounded-4">
+        <h3 class="text-center mb-4">Cadastro de Usuário</h3>
+        <form id="formCadUsuario" action="#" method="POST" class="row g-3 needs-validation border m-1 p-2" novalidate>
+          <div class="mb-3">
+            <input type="text" id="usuario" class="form-control" placeholder="Usuário" required />
+          </div>
+
+          <div class="mb-3">
+            <input type="email" id="email" class="form-control" placeholder="Email" required />
+          </div>
+
+          <div class="mb-3">
+            <input type="password" id="senha" class="form-control" placeholder="Senha" required />
+          </div>
+
+
+          <div class="text-center mt-3">
+            <button type="submit" class="btn btn-primary w-100">Cadastrar</button>
+            <a href="../login.html" class="text-decoration-none">Já tem uma conta? Faça login</a>
+          </div>
+        </form>
+
+        <div id="mensagem" class="mt-3 text-center"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./scriptCadastroUsuario.js"></script>
+</body>
+</html>
