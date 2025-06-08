@@ -1,0 +1,22 @@
+
+body {
+  background: linear-gradient(to right, #100020, #689be7);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+#mensagem {
+  font-size: 1rem;
+}

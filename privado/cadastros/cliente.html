@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+</head>
+
+<body>
+    <div class="container">
+        <div class="alert alert-secondary text-center mt-5">
+            <h1>Cadastro de Clientes</h1>
+        </div>
+        <form id="formCadCliente" action="#" method="POST" class="row g-3 needs-validation border m-1 p-2" novalidate>
+            <div class="col-md-4">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" required>
+                <div class="invalid-feedback">
+                    Por favor, informe o nome do cliente!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="cpf" class="form-label">CPF:</label>
+                <input type="text" class="form-control" id="cpf" required>
+                <div class="invalid-feedback">
+                    Por favor, informe o seu cpf!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Telefone</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">📞</span>
+                    <input type="text" class="form-control" id="telefone" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                        Por favor, informe o telefone.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="cidade" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="cidade" required>
+                <div class="invalid-feedback">
+                    Por favor, informe a cidade!
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="uf" class="form-label">UF</label>
+                <select class="form-select" id="uf" required>
+                    <option selected disabled value="">Escolha um estado</option>
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MT">MT</option>
+                    <option value="MS">MS</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                </select>
+                <div class="invalid-feedback">
+                    Por favor, selecione um estado válido.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="cep" class="form-label">CEP:</label>
+                <input type="text" class="form-control" id="cep" required>
+                <div class="invalid-feedback">
+                    Por favor, informe um cep.
+                </div>
+            </div>
+                <div class="col-12 text-center">
+                    <button class="btn btn-primary" type="submit">Cadastrar</button>
+                    <a href="../menu.html" class="btn btn-secondary">Voltar</a>
+                </div>
+        </form>
+        <div id="tabelaC"></div>
+    </div>
+
+</body>
+<script src='/js/bootstrap.bundle.min.js'></script>
+<script src="../../js/scriptCliente.js"></script>
+
+</html>

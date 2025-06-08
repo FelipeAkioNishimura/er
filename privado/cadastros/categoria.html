@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Categorias</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+</head>
+
+<body>
+    <div class="container">
+        <div class="alert alert-secondary text-center mt-5">
+            <h1>Cadastro de Categorias</h1>
+        </div>
+        <form id="formCadCategoria" action="#" method="POST" class="row g-3 needs-validation border m-1 p-2" novalidate>
+            <div class="col-md-6">
+                <label for="nomeCategoria" class="form-label">Nome da Categoria</label>
+                <input type="text" class="form-control" id="nome" required>
+                <div class="invalid-feedback">
+                    Por favor, informe o nome da categoria!
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="statusCategoria" class="form-label">Status</label>
+                <select class="form-select" id="statusCategoria" required>
+                    <option selected disabled value="">Escolha...</option>
+                    <option value="ativa">Ativa</option>
+                    <option value="inativa">Inativa</option>
+                </select>
+                <div class="invalid-feedback">
+                    Por favor, selecione o status da categoria.
+                </div>
+            </div>
+            <div class="col-12">
+                <label for="descricaoCategoria" class="form-label">Descrição</label>
+                <textarea class="form-control" id="descricao" rows="3" required></textarea>
+                <div class="invalid-feedback">
+                    Por favor, informe uma descrição da categoria!
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <button class="btn btn-primary" type="submit">Cadastrar</button>
+                <a href="../menu.html" class="btn btn-secondary">Voltar</a>
+            </div>
+        </form>
+        <div id="tabelaC">
+            
+        </div>
+    </div>
+
+</body>
+<script src='/js/bootstrap.bundle.min.js'></script>
+<script src="/js/scriptCategoria.js"></script>
+
+</html>

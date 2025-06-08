@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+</head>
+
+<body>
+    <div class="container">
+        <div class="alert alert-secondary text-center mt-5">
+            <h1>Cadastro de Produtos</h1>
+        </div>
+        <form id="formCadProduto" action="#" method="POST" class="row g-3 needs-validation border m-1 p-2" novalidate>
+            <div class="col-md-4">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" required>
+                <div class="invalid-feedback">
+                    Por favor, informe o nome do produto!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="codigo" class="form-label">Código:</label>
+                <input type="text" class="form-control" id="codigo" required>
+                <div class="invalid-feedback">
+                    Por favor, informe o código do produto!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Valor</label>
+                <div class="input-group has-validation">
+                    <input type="text" class="form-control" id="valor" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                        Por favor, informe o valor do produto!
+                    </div>
+                </div>
+            </div>
+
+                <div class="col-12 text-center">
+                    <button class="btn btn-primary" type="submit">Cadastrar</button>
+                    <a href="../menu.html" class="btn btn-secondary">Voltar</a>
+                </div>
+        </form>
+        <div id="tabelaP">
+            
+        </div>
+        <div id="resultado"></div>
+    </div>
+
+</body>
+<script src='/js/bootstrap.bundle.min.js'></script>
+<script src="/js/scriptProduto.js"></script>
+
+</html>

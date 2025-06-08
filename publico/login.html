@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página de Login</title>
+
+  <link rel="stylesheet" href="css/login.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2 class="text-center text-dark mt-5">Bem-vindo</h2>
+        <div class="text-center mb-5 text-dark">Faça o login</div>
+        <div class="card my-5">
+          
+          <form action="/login" method="POST" class="card-body cardbody-color p-lg-5">
+            
+            <div class="text-center">
+              <img src="imagens/login-avatar.webp"
+                   class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3"
+                   width="200"
+                   alt="Avatar de login" />
+            </div>
+
+            <div class="mb-3">
+              <input type="text" class="form-control" id="usuario" name="usuario"
+                     placeholder="Usuário" required />
+            </div>
+
+            <div class="mb-3">
+              <input type="password" class="form-control" id="senha" name="senha"
+                     placeholder="Senha" required />
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-color px-5 mb-3 w-100">Login</button>
+              <button type="submit" class="btn btn-color px-5 mb-3 w-100"><a href="index.html">Voltar</a></button>
+              <p class="mt-3">Não tem uma conta?
+                <a href="./js/cadastro-usuario.html" class="btn btn-outline-secondary mt-2 w-100">
+                  Inscreva-se
+                </a>
+              </p>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('erro') === '1') {
+    const div = document.createElement('div');
+    div.className = 'alert alert-danger text-center';
+    div.textContent = 'Usuário ou senha incorretos!';
+    document.querySelector('form').prepend(div);
+  }
+  </script>
+</body>
+</html>
